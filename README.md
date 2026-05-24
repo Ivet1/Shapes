@@ -1,4 +1,4 @@
-# Shapes Vector Graphics Editor
+# Shapes Graphics Editor
 
 An advanced C# Windows Forms application built on top of a decoupled class library (`ShapeLibrary`). The project demonstrates professional software architecture by separating core business logic from the presentation layer, implementing the **Command Pattern** for modular action management, and providing real-time data analysis.
 
@@ -14,9 +14,9 @@ An advanced C# Windows Forms application built on top of a decoupled class libra
 * **File Management:** Fully integrated with native Windows `SaveFileDialog` and `OpenFileDialog` dialogue systems.
 
 ### Data Analytics & Dashboard (Second Form)
-* **Mathematical & Statistical Analysis:** Integrates the **Math.NET Numerics** library to perform advanced statistical operations on vector canvas properties (e.g., calculating distribution, mean, variance, or geometric frequency of the drawn shapes).
-* **Data Visualization (Chart):** Uses the native WinForms `Chart` component to graphically display statistical distributions, frequency histograms, or shape attribute patterns through dynamic visual graphs.
-
+* **Statistical Analysis: Provides instant analytical data (Total Area, Average Area, and Maximum Shape area) combined with a column chart for quick geometric comparisons.
+### Statistical Comparisons
+* **Features a WinForms bar chart component that graphically visualizes and compares the geometric areas of all rendered shapes for statistical analysis.
 ##  Repository Structure
 
 ###  ShapeLibrary
@@ -27,8 +27,8 @@ An advanced C# Windows Forms application built on top of a decoupled class libra
 * `/Services` - Data persistence tracking providers (`ShapeXmlServices`).
 
 ###  ShapeApplication (UI)
-* `MainForm.cs` - The primary drawing interface managing canvas interactions and command execution triggers.
-* `AnalyticsForm.cs` - The secondary interface hosting the statistical dashboard, Math.NET compute engines, and graphical `Chart` elements.
+* `Scene.cs` - The primary drawing interface managing canvas interactions and command execution triggers.
+* `MathForm.cs` - The secondary interface hosting the statistical dashboard, Math.NET compute engines, and graphical `Chart` elements.
 
 ## How to Run and Test
 1. Clone or download this repository.
