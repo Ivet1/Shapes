@@ -28,11 +28,17 @@ An advanced C# Windows Forms application built on top of a decoupled class libra
 
 ###  ShapeApplication (UI)
 * `Scene.cs` - The primary drawing interface managing canvas interactions and command execution triggers.
+* `MathForm.cs` - The statistical dashboard displaying shape area comparisons via a native WinForms Column Chart and calculating metrics like Total, Average, and Max area.
+
+ ### How to Run and Test
+* Clone or download this repository.
+
+* Open the .sln solution file in Visual Studio.
+
+* Verify that both the main Windows Forms project and the underlying class library (ShapeLibrary) are correctly loaded within the solution explorer.
+
+* Press F5 or click Start to build the library and run the application.
+
+* Interact with the drawing canvas to trigger behavioral commands, open the analytics form to inspect the area comparison charts, and use the file dialogue buttons to test the custom XML data storage pipeline.
 * `MathForm.cs` - The secondary interface hosting the statistical dashboard, Math.NET compute engines, and graphical `Chart` elements.
 
-## How to Run and Test
-1. Clone or download this repository.
-2. Open the `.sln` solution file in **Visual Studio**.
-3. Ensure NuGet packages are restored (specifically `MathNet.Numerics`).
-4. Press **F5** or click **Start** to compile and run the application.
-5. Interact with the drawing canvas to trigger behavioral commands, open the analytics form to inspect the statistical charts, and use the integrated file dialogue buttons to test the XML data storage pipeline.
